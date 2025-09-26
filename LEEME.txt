@@ -1,0 +1,63 @@
+# Sistema de Registro de Productos
+
+Este proyecto corresponde a la prueba técnica solicitada.  
+Consiste en un formulario web para registrar productos, con validaciones en JavaScript y guardado en base de datos mediante PHP y MySQL.
+
+---
+
+## 📂 Estructura del proyecto
+
+├── index.html       -> Formulario principal
+├── style.css        -> Estilos básicos (Arial, 16px, botón verde)
+├── script.js        -> Validaciones en JavaScript
+├── insert.php       -> Backend PHP para guardar productos
+├── sql/
+│   └── db.sql       -> Script para crear base de datos y tablas
+└── LEEME.txt        -> Este archivo con instrucciones
+
+---
+
+## 🖥️ Tecnologías utilizadas
+- HTML5
+- CSS3
+- JavaScript (validaciones y alerts)
+- PHP 8.x
+- MySQL 8.x (puede usarse MariaDB en XAMPP)
+- Servidor local: XAMPP
+
+---
+
+## ⚙️ Pasos de instalación
+
+1. Instalar XAMPP (o LAMP/WAMP con soporte PHP + MySQL).
+2. Copiar la carpeta `registro-productos` en la carpeta `htdocs` de XAMPP.
+3. Iniciar **Apache** y **MySQL** desde el panel de XAMPP.
+4. Acceder a [http://localhost/phpmyadmin](http://localhost/phpmyadmin).
+5. Importar el archivo `sql/db.sql` para crear la base de datos y las tablas.
+6. Abrir en el navegador:  http://localhost/registro-productos/index.html
+7. Completar el formulario y guardar productos.
+
+---
+
+## 🗄️ Base de datos
+Nombre: `productosdb`
+
+Tablas principales:
+- `productos`
+- `bodegas`
+- `sucursales`
+- `monedas`
+
+El archivo `sql/db.sql` incluye datos de prueba para bodegas, sucursales y monedas.
+
+---
+
+## 📌 Notas
+- El **Código del Producto** es único y se valida antes de insertarse.
+- El formulario incluye validaciones personalizadas mediante JavaScript.
+- Los materiales se almacenan como una lista separada por comas en la base de datos.
+
+---
+
+
+
