@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Productos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form id="formProducto" method="POST" action="insert.php">
+        <h2>Registro de Productos</h2>
+
+        <label for="codigo">Código del Producto:</label>
+        <input type="text" id="codigo" name="codigo">
+
+        <label for="nombre">Nombre del Producto:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="bodega">Bodega:</label>
+        <select id="bodega" name="bodega">
+            <option value="">-- Selecciona una bodega --</option>
+            <!-- Aquí se llenará dinámicamente -->
+        </select>
+
+        <label for="sucursal">Sucursal:</label>
+        <select id="sucursal" name="sucursal">
+            <option value="">-- Selecciona una sucursal --</option>
+        </select>
+
+        <label for="moneda">Moneda:</label>
+        <select id="moneda" name="moneda">
+            <option value="">-- Selecciona una moneda --</option>
+        </select>
+
+        <label for="precio">Precio:</label>
+        <input type="text" id="precio" name="precio">
+
+        <label>Materiales:</label>
+        <input type="checkbox" name="materiales[]" value="madera"> Madera
+        <input type="checkbox" name="materiales[]" value="acero"> Acero
+        <input type="checkbox" name="materiales[]" value="plastico"> Plástico
+        <input type="checkbox" name="materiales[]" value="vidrio"> Vidrio
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion"></textarea>
+
+        <button type="submit">Guardar Producto</button>
+    </form>
+</body>
+</html>
